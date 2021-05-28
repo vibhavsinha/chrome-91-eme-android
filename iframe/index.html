@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en-IN">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo of Chrome 91 Breaking change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href='/css/page.css'>
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.1.0/shaka-player.ui.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/shaka-player/3.1.0/controls.css">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<div>
+  <h4>Shaka player setup below</h4>
+  <div class='row'>
+    <div class='col'>
+      <div data-shaka-player-container style="max-width:40em">
+        <video autoplay data-shaka-player id="video" style="width:100%;height:100%"></video>
+      </div>
+    </div>
+    <div class='col'>
+      <div id='errorBox'>
+        <strong>Shaka event:</strong>
+        <pre id='errorPre'></pre>
+      </div>
+    </div>
+  </div>
+  <p>
+    Manifest: https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd
+  </p>
+  <p>
+    License URL: https://cwip-shaka-proxy.appspot.com/no_auth
+  </p>
+</div>
+<script src="myapp.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--  <script>-->
+<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
+<!--  </script>-->
+<!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
+</body>
+
+</html>
