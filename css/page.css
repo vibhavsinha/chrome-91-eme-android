@@ -26,3 +26,13 @@ body {
   padding: 5px;
   font-size: 80%;
 }
+
+table#matrix, #matrix td {
+  border-collapse: collapse;
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+.codeBlock strong {
+  background-color: yellow;
+}
