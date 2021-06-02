@@ -33,6 +33,10 @@ table#matrix, #matrix td {
   padding: 4px;
 }
 
+table#matrix thead {
+  font-weight: bold;
+}
+
 .codeBlock strong {
   background-color: yellow;
 }
