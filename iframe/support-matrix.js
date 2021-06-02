@@ -1,4 +1,3 @@
-console.log('this is the support matrix');
 const robustnessLevels = [
   '',
   'SW_SECURE_CRYPTO',
