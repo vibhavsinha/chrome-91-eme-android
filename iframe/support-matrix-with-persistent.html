@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Support Matrix</title>
+  <link rel="stylesheet" href='../css/page.css'>
+</head>
+<body>
+  <pre class='codeBlock'><code>
+    const robustnessLevels = [
+      '',
+      'SW_SECURE_CRYPTO',
+      'SW_SECURE_DECODE',
+      'HW_SECURE_CRYPTO',
+      'HW_SECURE_DECODE',
+      'HW_SECURE_ALL'
+    ];
+    const keysRequirementDict = ['required', 'optional', 'not-allowed'];
+    navigator.requestMediaKeySystemAccess('com.widevine.alpha', [{
+      initDataTypes: ['cenc'],
+      distinctiveIdentifier: <strong>requirement</strong>,
+      persistentState: <strong>requirement</strong>,
+      videoCapabilities: [{
+        contentType: 'video/mp4;codecs="avc1.42E01E"',
+        robustness: <strong>level</strong>,
+      }]
+    }])
+  </code>
+  </pre>
+  <table id='matrix'>
+    <thead>
+      <tr>
+        <td>distinctiveIdentifier</td>
+        <td colspan='3'>required</td>
+        <td colspan='3'>optional</td>
+        <td colspan='3'>not-allowed</td>
+      </tr>
+      <tr>
+        <td>persistentState</td>
+        <td>required</td>
+        <td>optional</td>
+        <td>not-allowed</td>
+        <td>required</td>
+        <td>optional</td>
+        <td>not-allowed</td>
+        <td>required</td>
+        <td>optional</td>
+        <td>not-allowed</td>
+      </tr>
+    </thead>
+    <tbody id='matrixBody'>
+    </tbody>
+  </table>
+  <script src='./support-matrix-with-persistent.js'></script>
+</body>
+</html>
