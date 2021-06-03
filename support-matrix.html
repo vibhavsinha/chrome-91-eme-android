@@ -15,6 +15,7 @@
   <!-- Add your site or application content here -->
   <div class='container'>
     <h1>Demo of Chrome 91 breaking change</h1>
+    <p id='userAgent'></p>
     <p>Below <code>iframe</code> is from a different domain (https://cocky-bell-b5fbf9.netlify.app) making this
       cross-origin</p>
     <a href='/'>Back to demo</a>
@@ -24,6 +25,8 @@
         src='https://cocky-bell-b5fbf9.netlify.app/iframe/support-matrix.html'
         allow='encrypted-media'></iframe>
   </div>
+
+  <script src='show-user-agent.js'></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4Q5KH98C7"></script>
